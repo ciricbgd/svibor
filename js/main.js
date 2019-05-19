@@ -29,8 +29,6 @@ $(document).ready(function () {
 
             karticeDOM.append(karticaTemplate);
 
-            console.log(karticaTemplate);
-
         });
 
 
@@ -59,5 +57,19 @@ $(document).ready(function () {
         }
     });
 
+
+    $('.destination').hover(function(){expandDestination(this)});
+
+    
+    function expandDestination(destination){
+        var img = $(destination).find('img')[0];
+        $(destination).css({
+            'width':'0'
+        });
+        $(img).css({
+            'display':'block'
+        });
+        $(img).animate({width: '300px'});
+    }
 
 });
