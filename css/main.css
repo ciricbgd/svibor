@@ -6,45 +6,88 @@
 
 html,
 body {
-    max-width: 100vw;
+    max-width: 100%;
+    background-color:rgb(107, 46, 30);
+    overflow-x:hidden;
 }
 
 .container {
     max-width: 1000px;
 }
 
-/* kartica */
-.kartica {
-    background-image: url('../Slike/Brod/Brod-14-L.jpg');
+.landing{
+    width:100%;
+    position:relative;
+    min-height: 100vh;
+    background-image: url(../Slike/Brod/pozadina.jpg);
     background-size: cover;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    padding: 50px;
+    background-position: center right;
+
+    position:relative;
 }
 
-.kartica a {
-    display: inline-block;
-    text-decoration: none;
-    color: none;
+.landingText{
+    position:absolute;
+    top:2vmax;
+    left:2vmax;
+    color:white;
+    max-width:50%;
 }
 
-.kartica a img {
-    width: 100px;
-    height: 100px;
-    margin: 7px;
-    border-radius: 10%;
-    display: inline-block;
+.landingText h1{
+    font-size:10vmax;
+    font-family:knightFont;
+}
+.landingText p{
+    font-size:2.5vmax;
+}
+.landing button{
+    color:white;
+    padding:1vmax;
+    cursor:pointer;
+    position:absolute;
+    bottom:2vmax;
+    left:10%;
+    font-size:2vmax;
+    background:none;
+    border:4px solid white;
 }
 
-.kartica a img {
-    display: inline-block;
-    border: 4px solid white;
-    object-fit: cover;
+
+.cards{
+    background-color:white;
+    width:100%;
 }
 
-.slike {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.card{
+    width:100%;
+    height:100vh;
+    background-color:white;
+    display:flex;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+.card:nth-child(2n){
+    flex-direction: row-reverse;
+}
+
+.cardText {
+    width:50%;
+    padding:3vmax;
+    overflow:hidden;
+}
+.cardText p{
+    width:100%;
+    height:100%;
+    display:block;
+    font-size:3vmax;
+
+ 
+    transform: translateY(25%); 
+}
+.cardImage{
+    height:100%;
+    width:50%;
+    object-fit:cover;
 }

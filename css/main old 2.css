@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100vw;
+    background-color:rgb(107, 46, 30);
+    overflow-x:hidden;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+/* kartica */
+.kartica {
+    background-image: url('../Slike/Brod/Brod-14-L.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 50px;
+}
+
+.kartica a {
+    display: inline-block;
+    text-decoration: none;
+    color: none;
+}
+
+.kartica a img {
+    width: 100px;
+    height: 100px;
+    margin: 7px;
+    border-radius: 10%;
+    display: inline-block;
+}
+
+.kartica a img {
+    display: inline-block;
+    border: 4px solid white;
+    object-fit: cover;
+}
+
+.slike {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.destination {
+    background: rgb(238,199,113);
+    background: linear-gradient( rgba(238,199,113,1) 29%, rgba(227,99,57,1) 100%);
+    width:5vw;
+    height:5vw;
+    border-radius: 100%;
+    margin-bottom:40vmin;
+
+
+    -webkit-box-shadow: 5px 5px 12px 2px rgba(0,0,0,0.29);
+    -moz-box-shadow: 5px 5px 12px 2px rgba(0,0,0,0.29);
+    box-shadow: 5px 5px 12px 2px rgba(0,0,0,0.29);
+}
+
+.destination img{
+    border:1vmin solid rgb(238, 199, 113);
+    border-radius:15%;
+    display:block;
+    width:20vw;
+   
+
+    -webkit-box-shadow: 10px 10px 21px -9px rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 10px 21px -9px rgba(0,0,0,0.25);
+    box-shadow: 10px 10px 21px -9px rgba(0,0,0,0.25);
+}
+
+#storyTeller{
+    width: 100%;
+    min-height:100vh;
+    padding:5vmin;
+}
+.right{
+    float:right;
+}
+.right img{
+    transform:translateX(-19vw);
+}
