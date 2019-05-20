@@ -1,3 +1,8 @@
+@font-face {
+    font-family: knightFont;
+    src: url(../css/font/vinque.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,87 +12,103 @@
 html,
 body {
     max-width: 100%;
-    background-color:rgb(107, 46, 30);
-    overflow-x:hidden;
+    background-color: rgb(107, 46, 30);
+    overflow-x: hidden;
 }
 
 .container {
     max-width: 1000px;
 }
 
-.landing{
-    width:100%;
-    position:relative;
+.landing {
+    width: 100%;
+    position: relative;
     min-height: 100vh;
     background-image: url(../Slike/Brod/pozadina.jpg);
     background-size: cover;
     background-position: center right;
 
-    position:relative;
+    position: relative;
 }
 
-.landingText{
-    position:absolute;
-    top:2vmax;
-    left:2vmax;
-    color:white;
-    max-width:50%;
+.landingText {
+    position: absolute;
+    top: 2vmax;
+    left: 2vmax;
+    color: white;
+    max-width: 50%;
 }
 
-.landingText h1{
-    font-size:10vmax;
-    font-family:knightFont;
+.landingText h1 {
+    font-size: 10vmax;
+    font-family: knightFont;
 }
-.landingText p{
-    font-size:2.5vmax;
+
+.landingText p {
+    font-size: 2.5vmax;
 }
-.landing button{
-    color:white;
-    padding:1vmax;
-    cursor:pointer;
-    position:absolute;
-    bottom:2vmax;
-    left:10%;
-    font-size:2vmax;
-    background:none;
-    border:4px solid white;
+
+.landing button {
+    color: white;
+    padding: 1vmax;
+    cursor: pointer;
+    position: absolute;
+    bottom: 2vmax;
+    left: 10%;
+    font-size: 2vmax;
+    background: none;
+    border: 4px solid white;
 }
 
 
-.cards{
-    background-color:white;
-    width:100%;
+.cards {
+    background-color: white;
+    width: 100%;
 }
 
-.card{
-    width:100%;
-    height:100vh;
-    background-color:white;
-    display:flex;
+.card {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
     justify-content: flex-end;
     align-items: stretch;
 }
 
-.card:nth-child(2n){
+.card:nth-child(2n) {
     flex-direction: row-reverse;
 }
 
 .cardText {
-    width:50%;
-    padding:3vmax;
-    overflow:hidden;
-}
-.cardText p{
-    width:100%;
-    height:100%;
-    display:block;
-    font-size:3vmax;
+    width: 50%;
+    padding: 3vmax;
+    overflow: hidden;
 
- 
-    transform: translateY(25%); 
+    box-shadow: inset 0px 0px 77px 2px rgba(0, 0, 0, 0.25);
 }
-.cardImage{
-    height:100%;
-    width:50%;
-    object-fit:cover;
+
+.cardText p {
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 3vmax;
+
+
+    transform: translateY(25%);
+}
+
+.cardImage {
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+.cardImage img {
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.cardImage img:hover {
+    transform: scale(1.5);
+    transition: transform .25s, visibility .25s ease-in;
 }
