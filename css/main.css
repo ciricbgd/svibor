@@ -3,6 +3,11 @@
     src: url(../css/font/vinque.ttf);
 }
 
+@font-face {
+    font-family: knightFontlight;
+    src: url(../css/font/BLKCHCRY.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -46,6 +51,7 @@ body {
 
 .landingText p {
     font-size: 2.5vmax;
+    font-family: knightFontlight;
 }
 
 .landing button {
@@ -53,11 +59,19 @@ body {
     padding: 1vmax;
     cursor: pointer;
     position: absolute;
-    bottom: 2vmax;
+    bottom: 4vmax;
     left: 10%;
     font-size: 2vmax;
     background: none;
     border: 4px solid white;
+    transition: transform 0.3s ease;
+    font-family: knightFont;
+}
+
+.landing button:hover {
+    transform: scale(1.5);
+    transform-origin: center;
+    transition: transform 0.7s ease;
 }
 
 
@@ -85,6 +99,12 @@ body {
     overflow: hidden;
 
     box-shadow: inset 0px 0px 77px 2px rgba(0, 0, 0, 0.25);
+    background-image: url(../images/oldscroll.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: rgb(83, 31, 0);
+    text-shadow: 1px 1px 4px rgba(37, 14, 0, 0.5);
+    font-family: knightFontlight;
 }
 
 .cardText p {
@@ -92,8 +112,9 @@ body {
     height: 100%;
     display: block;
     font-size: 3vmax;
+}
 
-
+.cardText p:nth-child(n+2) {
     transform: translateY(25%);
 }
 
@@ -106,9 +127,19 @@ body {
 .cardImage img {
     object-fit: cover;
     object-position: 50% 50%;
+    transition: transform .25s ease-in-out;
 }
 
 .cardImage img:hover {
-    transform: scale(1.5);
-    transition: transform .25s, visibility .25s ease-in;
+    transform: scale(1.2);
+    transition: transform 1s ease-in;
+}
+
+.introVideo {
+    border: 7px solid rgb(83, 31, 0);
+    margin-left: 5%;
+
+    -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
 }
